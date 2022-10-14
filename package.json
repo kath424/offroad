@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@fullcalendar/interaction": "^5.11.3",
+    "fullcalendar": "^5.11.3"
+  }
+}

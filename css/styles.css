@@ -1,0 +1,251 @@
+:root {
+  --primario: #C4411A;
+  --blanco: #FFF;
+  --negro: #000000;
+  --fuentePrincipal: 'Poppins', sans-serif;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: var(--fuentePrincipal);
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+h1, h2, h3 {
+  font-weight: 900;
+  margin: 2rem 0;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 4.6rem;
+}
+h3 {
+  font-size: 3rem;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.header__contenedor {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Header */
+.header__contenedor{
+  background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0,0.5)), url(/img/pexels-ahmad-syahrir-761815.jpg);
+  
+  height: 100vh;
+  background-size: cover;
+}
+.header__barra {
+  display: flex;
+  align-items: center;
+}
+
+@media(min-width: 768px){
+ .header__barra{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+}
+.header__logo{
+  width: 10rem;
+}
+
+/* @media(min-width: 768px){
+  .header__logo {
+    margin: 0;
+  }
+} */
+ .navegacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navegacion__link {
+  color: white;
+}
+
+@media(min-width:768px){
+  .navegacion {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding-right: 3rem;
+  }
+} 
+
+/* Seccion 1 */
+.offroad{
+
+}
+.offroad__heading{
+  text-align: center;
+}
+.offroad__contenedor{
+
+}
+.offroad__grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 1rem;
+  
+}
+
+@media(min-width: 768px){
+  .offroad__grid{
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;  
+  margin-bottom: 5rem;
+  }
+}
+
+.offroad__grid--2{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+@media(min-width: 768px) {
+  .offroad__grid--2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    
+  }
+}
+
+.offroad__imagen{
+  display: flex;
+}
+.offroad__imagen img{
+  border-radius: 1rem;
+}
+
+/* Lista */
+.lista{
+  
+}
+
+.lista__elemento{
+  background-color: var(--blanco);
+  box-shadow: 0px 0px 15px 3px rgb(0 0 0 / .15);
+  padding: 2rem;
+  margin-bottom: 1rem;
+  transition-property: transform;
+  transition-duration: 300ms;
+}
+
+.lista__elemento:hover{
+  transform: scale(1.1);
+}
+
+.lista__heading{
+  font-size: 2.5rem;
+  color: var(--primario);
+  margin: 0;
+}
+
+.lista__texto{
+margin: 0;
+font-size: 1rem;
+}
+
+.seguridad{
+
+}
+.seguridad__contenedor{
+
+}
+.seguridad__grid {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+}
+
+/* servicios */
+.servicio{
+  
+}
+.servicios__heading{
+ text-align: center;
+}
+
+.servicios__contenedor{
+
+}
+
+.servicios__grid{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media(min-width:768px){
+  .servicios__grid{
+    flex-direction: row;
+    justify-content: space-around;
+
+  }
+}
+
+.servicios__imagen{
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50rem;
+}
+
+.servicios__imagen--p{
+ text-align: center;
+}
+
+/* Galeria */
+.galeria{
+
+}
+
+.galeria__heading{
+  text-align: center;
+}
+
+.galeria__contenedor{
+
+}
+
+.galeria__grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media(min-width: 768px){
+  .galeria__grid{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+
+.galeria__imagen:hover{
+  opacity: 0.5;
+}
+/* .galeria__imagen{
+  height: 40rem;
+  width: 40rem;
+} */
+
+/* calendario */
+
